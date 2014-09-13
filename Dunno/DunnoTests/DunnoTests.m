@@ -1,6 +1,6 @@
 //
-//  leggoTests.m
-//  leggoTests
+//  DunnoTests.m
+//  DunnoTests
 //
 //  Created by Saiteja Samudrala on 9/13/14.
 //  Copyright (c) 2014 edu.foothill. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface leggoTests : XCTestCase
+@interface DunnoTests : XCTestCase
 
 @end
 
-@implementation leggoTests
+@implementation DunnoTests
 
 - (void)setUp
 {

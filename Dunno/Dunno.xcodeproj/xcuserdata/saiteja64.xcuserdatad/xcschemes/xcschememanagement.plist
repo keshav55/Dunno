@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>leggo.xcscheme</key>
+		<key>Dunno.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2FF089BB19C4D65F00061631</key>
+		<key>2FF089FE19C50F1C00061631</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2FF089DC19C4D66000061631</key>
+		<key>2FF08A1F19C50F1D00061631</key>
 		<dict>
 			<key>primary</key>
 			<true/>

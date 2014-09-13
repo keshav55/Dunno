@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2FF089BB19C4D65F00061631"
-               BuildableName = "leggo.app"
-               BlueprintName = "leggo"
-               ReferencedContainer = "container:leggo.xcodeproj">
+               BlueprintIdentifier = "2FF089FE19C50F1C00061631"
+               BuildableName = "Dunno.app"
+               BlueprintName = "Dunno"
+               ReferencedContainer = "container:Dunno.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2FF089DC19C4D66000061631"
-               BuildableName = "leggoTests.xctest"
-               BlueprintName = "leggoTests"
-               ReferencedContainer = "container:leggo.xcodeproj">
+               BlueprintIdentifier = "2FF08A1F19C50F1D00061631"
+               BuildableName = "DunnoTests.xctest"
+               BlueprintName = "DunnoTests"
+               ReferencedContainer = "container:Dunno.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2FF089BB19C4D65F00061631"
-            BuildableName = "leggo.app"
-            BlueprintName = "leggo"
-            ReferencedContainer = "container:leggo.xcodeproj">
+            BlueprintIdentifier = "2FF089FE19C50F1C00061631"
+            BuildableName = "Dunno.app"
+            BlueprintName = "Dunno"
+            ReferencedContainer = "container:Dunno.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2FF089BB19C4D65F00061631"
-            BuildableName = "leggo.app"
-            BlueprintName = "leggo"
-            ReferencedContainer = "container:leggo.xcodeproj">
+            BlueprintIdentifier = "2FF089FE19C50F1C00061631"
+            BuildableName = "Dunno.app"
+            BlueprintName = "Dunno"
+            ReferencedContainer = "container:Dunno.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2FF089BB19C4D65F00061631"
-            BuildableName = "leggo.app"
-            BlueprintName = "leggo"
-            ReferencedContainer = "container:leggo.xcodeproj">
+            BlueprintIdentifier = "2FF089FE19C50F1C00061631"
+            BuildableName = "Dunno.app"
+            BlueprintName = "Dunno"
+            ReferencedContainer = "container:Dunno.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
