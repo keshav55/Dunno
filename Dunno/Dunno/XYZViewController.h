@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface XYZViewController : UIViewController
-@property (strong, nonatomic) NSMutableDictionary* logindetails;
+@property (strong, nonatomic) NSMutableArray* users;
+@property (strong, nonatomic) IBOutlet UITextField * username;
+@property (strong, nonatomic) IBOutlet UITextField * password;
 
+-(IBAction)signup:(id)sender;
+-(IBAction)login:(id)sender;
 
 @end
