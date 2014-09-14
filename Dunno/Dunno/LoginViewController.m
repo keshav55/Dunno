@@ -163,7 +163,7 @@
     NSString *fuid = [dict objectForKey:@"uid"];
     NSString *name = [dict objectForKey:@"name"];
     
-    NSDictionary *send = @{@"name":name, @"number":number, @"city":city};
+    NSDictionary *send = @{@"name":name, @"number":number, @"city":city, @"id":fuid};
     NSDictionary *final =@{fuid:send};
     
     Firebase* userj = [[Firebase alloc] initWithUrl:@"https://thedunno.firebaseio.com/"];

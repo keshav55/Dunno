@@ -10,4 +10,10 @@
 
 @interface QuestionViewController : UIViewController
 
+@property (strong, nonatomic) NSDictionary *puller;
+
+@property (strong, nonatomic) IBOutlet UITextField *question;
+
+
+
 @end

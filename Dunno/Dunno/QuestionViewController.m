@@ -7,6 +7,7 @@
 //
 
 #import "QuestionViewController.h"
+#import <Firebase/Firebase.h>
 
 @interface QuestionViewController ()
 
@@ -27,7 +28,39 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+  
 }
+-(IBAction)submitQuestion:(id)sender {
+    NSString *question = _question.text;
+    
+    NSDictionary *questions = @{@"question": question};
+    
+    Firebase* userj = [[Firebase alloc] initWithUrl:@"https://thedunno.firebaseio.com/"];
+    
+ 
+    
+    
+}
+
+-(IBAction)pullThis:(id)sender {
+    Firebase* postsRef = [[Firebase alloc] initWithUrl: @"https://thedunno.firebaseio.com/"];
+    
+    // Attach a block to read the data at our posts reference
+    [postsRef observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
+        NSLog(@"%@", snapshot.value);
+        _puller = snapshot.value;
+        
+    } withCancelBlock:^(NSError *error) {
+        NSLog(@"%@", error.description);
+    }];
+    
+    NSLog(@"%@", _puller);
+    
+    NSString *city = [_puller objectForKey:@"city"];
+    
+    NSLog(@"%@", city);
+}
+    
 
 - (void)didReceiveMemoryWarning
 {
