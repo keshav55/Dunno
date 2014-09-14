@@ -13,6 +13,7 @@
 #import <Parse/Parse.h>
 #import <Firebase/Firebase.h>
 #import <FirebaseSimpleLogin/FirebaseSimpleLogin.h>
+#import "QuestionViewController.h"
 
 @interface LoginViewController ()
 
@@ -157,7 +158,25 @@
     NSLog(@"%@", _place);
     NSArray *placeparse = [_place componentsSeparatedByString:@","];
     NSLog(@"%@", placeparse);
-    NSString *city = [placeparse objectAtIndex:2];
+    NSString *city = [placeparse objectAtIndex:3];
+    NSString *number = _phonenumber.text;
+    NSString *fuid = [dict objectForKey:@"uid"];
+    NSString *name = [dict objectForKey:@"name"];
+    
+    NSDictionary *send = @{@"name":name, @"number":number, @"city":city};
+    NSDictionary *final =@{fuid:send};
+    
+    Firebase* userj = [[Firebase alloc] initWithUrl:@"https://thedunno.firebaseio.com/"];
+    
+    
+    [userj setValue:final];
+    
+    QuestionViewController *secondViewController =
+    [self.storyboard instantiateViewControllerWithIdentifier:@"secondVC"];
+    [self.navigationController pushViewController:secondViewController animated:YES];
+    
+    
+    
     
 }
 

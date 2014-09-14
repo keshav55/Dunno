@@ -42,6 +42,7 @@
 		76DA893019C568A3006D8CC0 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA892F19C568A3006D8CC0 /* libicucore.dylib */; };
 		76DA893219C568B1006D8CC0 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA893119C568B1006D8CC0 /* libc++.dylib */; };
 		76DA893619C574B4006D8CC0 /* TwilioSMS.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA893519C574B4006D8CC0 /* TwilioSMS.m */; };
+		76DA893919C57D42006D8CC0 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA893819C57D42006D8CC0 /* QuestionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		76DA893119C568B1006D8CC0 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		76DA893419C574B4006D8CC0 /* TwilioSMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwilioSMS.h; sourceTree = "<group>"; };
 		76DA893519C574B4006D8CC0 /* TwilioSMS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwilioSMS.m; sourceTree = "<group>"; };
+		76DA893719C57D42006D8CC0 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		76DA893819C57D42006D8CC0 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +201,8 @@
 				2FF08A1119C50F1C00061631 /* XYZAppDelegate.h */,
 				2FF08A1219C50F1D00061631 /* XYZAppDelegate.m */,
 				2FF08A1419C50F1D00061631 /* Main.storyboard */,
+				76DA893719C57D42006D8CC0 /* QuestionViewController.h */,
+				76DA893819C57D42006D8CC0 /* QuestionViewController.m */,
 				76DA891F19C549EE006D8CC0 /* LoginViewController.h */,
 				76DA892019C549EE006D8CC0 /* LoginViewController.m */,
 				76DA893319C574B4006D8CC0 /* TwilioSMS */,
@@ -355,6 +360,7 @@
 				2FF08A1919C50F1D00061631 /* XYZViewController.m in Sources */,
 				76DA892119C549EE006D8CC0 /* LoginViewController.m in Sources */,
 				2FF08A1319C50F1D00061631 /* XYZAppDelegate.m in Sources */,
+				76DA893919C57D42006D8CC0 /* QuestionViewController.m in Sources */,
 				2FF08A0F19C50F1C00061631 /* main.m in Sources */,
 				76DA891A19C5492F006D8CC0 /* SM_LocationKit.m in Sources */,
 				76DA892419C54AB0006D8CC0 /* MBProgressHUD.m in Sources */,
@@ -439,9 +445,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos7.1;
 			};
 			name = Debug;
 		};
@@ -471,8 +477,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos7.1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
