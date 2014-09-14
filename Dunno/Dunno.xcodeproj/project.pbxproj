@@ -21,6 +21,7 @@
 		2FF08A2419C50F1D00061631 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF08A0619C50F1C00061631 /* UIKit.framework */; };
 		2FF08A2C19C50F1D00061631 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FF08A2A19C50F1D00061631 /* InfoPlist.strings */; };
 		2FF08A2E19C50F1D00061631 /* DunnoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF08A2D19C50F1D00061631 /* DunnoTests.m */; };
+		2FF08A3A19C5132D00061631 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF08A3919C5132D00061631 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2FF08A2919C50F1D00061631 /* DunnoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DunnoTests-Info.plist"; sourceTree = "<group>"; };
 		2FF08A2B19C50F1D00061631 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2FF08A2D19C50F1D00061631 /* DunnoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DunnoTests.m; sourceTree = "<group>"; };
+		2FF08A3919C5132D00061631 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			files = (
 				2FF08A0519C50F1C00061631 /* CoreGraphics.framework in Frameworks */,
 				2FF08A0719C50F1C00061631 /* UIKit.framework in Frameworks */,
+				2FF08A3A19C5132D00061631 /* Parse.framework in Frameworks */,
 				2FF08A0319C50F1C00061631 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +104,7 @@
 		2FF08A0119C50F1C00061631 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FF08A3919C5132D00061631 /* Parse.framework */,
 				2FF08A0219C50F1C00061631 /* Foundation.framework */,
 				2FF08A0419C50F1C00061631 /* CoreGraphics.framework */,
 				2FF08A0619C50F1C00061631 /* UIKit.framework */,
@@ -377,6 +381,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dunno/Dunno-Prefix.pch";
 				INFOPLIST_FILE = "Dunno/Dunno-Info.plist";
@@ -390,6 +398,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dunno/Dunno-Prefix.pch";
 				INFOPLIST_FILE = "Dunno/Dunno-Info.plist";
@@ -457,6 +469,7 @@
 				2FF08A3319C50F1D00061631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FF08A3419C50F1D00061631 /* Build configuration list for PBXNativeTarget "DunnoTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +478,7 @@
 				2FF08A3619C50F1D00061631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

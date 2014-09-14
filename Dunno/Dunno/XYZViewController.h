@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface XYZViewController : UIViewController
+@property (strong, nonatomic) NSMutableDictionary* logindetails;
+
 
 @end
