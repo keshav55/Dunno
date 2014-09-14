@@ -11,7 +11,8 @@
 #import "SM_FBKit.h"
 #import "SM_LocationKit.h"
 #import <Parse/Parse.h>
-
+#import <Firebase/Firebase.h>
+#import <FirebaseSimpleLogin/FirebaseSimpleLogin.h>
 
 @interface LoginViewController ()
 
@@ -42,7 +43,55 @@
 - (IBAction)facebookAction:(id)sender {
     
     [self loginFacebook];
-
+//    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+//    [[SM_FBKit sharedInstance] openSession:^(NSError *error) {
+//        if(error){
+//            [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+//            [[[UIAlertView alloc] initWithTitle:@"Error" message:[NSString stringWithFormat:@"An error occured while connecting to Facebook, please try again."] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+//            return ;
+//        }else{
+//            
+//            
+//            NSArray* actionLinks = [NSArray arrayWithObjects:[NSDictionary dictionaryWithObjectsAndKeys:
+//                                                              @"testapp",@"name",
+//                                                              @"http://www.testapp.com",@"link", nil],
+//                                    nil];
+//            
+//            NSData* jsonData = [NSJSONSerialization dataWithJSONObject:actionLinks options:0 error:nil];
+//            NSString* actionLinksStr = [[NSString alloc] initWithBytes:[jsonData bytes] length:[jsonData length] encoding:NSUTF8StringEncoding];
+//        
+//            
+//            NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+//                                           @"Testing Facebook", @"name",
+//                                           @"Testing facebook caption.", @"caption",
+//                                           @"A sample facebook application to test facebook caption.", @"description",
+//                                           @"http://www.google.com", @"link",
+//                                           @"https://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png", @"picture",
+//                                           actionLinksStr, @"actions",
+//                                           nil];
+//            
+    
+            
+//            [[SM_FBKit sharedInstance] postToWall:params withCompletion:^(NSError *error_post) {
+//
+//                [MBProgressHUD hideAllHUDsForView:self.view animated:NO];
+//                dispatch_async(dispatch_get_main_queue(), ^{
+//                    MBProgressHUD* HUD = [[MBProgressHUD alloc] initWithView:self.view];
+//                    [self.navigationController.view addSubview:HUD];
+//                    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
+//                    
+//                    HUD.mode = MBProgressHUDModeCustomView;
+//                    HUD.animationType = MBProgressHUDAnimationZoom;
+//                    HUD.delegate = (id<MBProgressHUDDelegate>)self;
+//                    HUD.labelText = @"Posteado";
+//                    
+//                    [HUD show:YES];
+//                    [HUD hide:YES afterDelay:3];
+//                });
+//            }];
+            
+//        }
+//    }];
     
 }
 - (IBAction)locationAction:(id)sender {
@@ -62,43 +111,30 @@
     
     
 }
-
--(void) loginFacebook {
+-(void)loginFacebook{
+    Firebase* ref = [[Firebase alloc] initWithUrl:@"https://thedunno.firebaseio.com/"];
+    FirebaseSimpleLogin* authClient = [[FirebaseSimpleLogin alloc] initWithRef:ref];
     
-    NSArray *permissionsArray = @[ @"user_about_me", @"user_relationships", @"user_birthday", @"user_location"];
-    
-    [PFFacebookUtils initializeFacebook];
-    // Login PFUser using Facebook
-    [PFFacebookUtils logInWithPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
-//        [_activityIndicator stopAnimating]; // Hide loading indicator
-        
-        if (!user) {
-            NSString *errorMessage = nil;
-            if (!error) {
-                NSLog(@"Uh oh. The user cancelled the Facebook login.");
-                errorMessage = @"Uh oh. The user cancelled the Facebook login.";
-            } else {
-                NSLog(@"Uh oh. An error occurred: %@", error);
-                errorMessage = [error localizedDescription];
-            }
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Log In Error"
-                                                            message:errorMessage
-                                                           delegate:nil
-                                                  cancelButtonTitle:nil
-                                                  otherButtonTitles:@"Dismiss", nil];
-            [alert show];
-        } else {
-            if (user.isNew) {
-                NSLog(@"User with facebook signed up and logged in!");
-            } else {
-                NSLog(@"User with facebook logged in!");
-            }
-
-        }
-    }];
+    [authClient loginToFacebookAppWithId:@"691201824298978" permissions:@[@"email"]
+                                audience:ACFacebookAudienceOnlyMe
+                     withCompletionBlock:^(NSError *error, FAUser *user) {
+                         
+                         if (error != nil) {
+                             
+                             NSLog(@"no success!");
+                         } else {
+                             NSDictionary *dict = user.thirdPartyUserData;
+                             [[NSUserDefaults standardUserDefaults]setObject:dict forKey:@"dict"];
+                             NSLog(@"%@", dict);
+                             
+                             
+                             
+//                             IDKViewController *secondViewController =
+//                             [self.storyboard instantiateViewControllerWithIdentifier:@"secondVC"];
+//                             [self.navigationController pushViewController:secondViewController animated:YES];
+                         }
+                     }];
 }
-
-
 
 /*
 #pragma mark - Navigation

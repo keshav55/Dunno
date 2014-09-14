@@ -37,6 +37,10 @@
 		76DA892119C549EE006D8CC0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA892019C549EE006D8CC0 /* LoginViewController.m */; };
 		76DA892419C54AB0006D8CC0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA892319C54AB0006D8CC0 /* MBProgressHUD.m */; };
 		76DA892619C54C36006D8CC0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA892519C54C36006D8CC0 /* FacebookSDK.framework */; };
+		76DA892C19C566A4006D8CC0 /* FirebaseSimpleLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA892B19C566A4006D8CC0 /* FirebaseSimpleLogin.framework */; };
+		76DA892E19C567D5006D8CC0 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA892D19C567D5006D8CC0 /* Firebase.framework */; };
+		76DA893019C568A3006D8CC0 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA892F19C568A3006D8CC0 /* libicucore.dylib */; };
+		76DA893219C568B1006D8CC0 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA893119C568B1006D8CC0 /* libc++.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +93,10 @@
 		76DA892219C54AB0006D8CC0 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		76DA892319C54AB0006D8CC0 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		76DA892519C54C36006D8CC0 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = "../../../../Downloads/SocialConnector-master/FacebookSDK.framework"; sourceTree = "<group>"; };
+		76DA892B19C566A4006D8CC0 /* FirebaseSimpleLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseSimpleLogin.framework; path = ../../RoomySpark/FirebaseSimpleLogin.framework; sourceTree = "<group>"; };
+		76DA892D19C567D5006D8CC0 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = ../../../../Downloads/Firebase.framework; sourceTree = "<group>"; };
+		76DA892F19C568A3006D8CC0 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		76DA893119C568B1006D8CC0 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76DA893219C568B1006D8CC0 /* libc++.dylib in Frameworks */,
+				76DA893019C568A3006D8CC0 /* libicucore.dylib in Frameworks */,
+				76DA892E19C567D5006D8CC0 /* Firebase.framework in Frameworks */,
+				76DA892C19C566A4006D8CC0 /* FirebaseSimpleLogin.framework in Frameworks */,
 				76DA892619C54C36006D8CC0 /* FacebookSDK.framework in Frameworks */,
 				76DA891E19C54964006D8CC0 /* Social.framework in Frameworks */,
 				76DA891C19C5495E006D8CC0 /* Accounts.framework in Frameworks */,
@@ -149,6 +161,10 @@
 		2FF08A0119C50F1C00061631 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76DA893119C568B1006D8CC0 /* libc++.dylib */,
+				76DA892F19C568A3006D8CC0 /* libicucore.dylib */,
+				76DA892D19C567D5006D8CC0 /* Firebase.framework */,
+				76DA892B19C566A4006D8CC0 /* FirebaseSimpleLogin.framework */,
 				76DA892519C54C36006D8CC0 /* FacebookSDK.framework */,
 				76DA891D19C54964006D8CC0 /* Social.framework */,
 				76DA891B19C5495E006D8CC0 /* Accounts.framework */,
@@ -458,11 +474,15 @@
 					"$(PROJECT_DIR)",
 					"/Users/kool/Downloads/SocialConnector-master",
 					"/Users/kool/Downloads/ParsePlatform-IntegratingFacebookTutorial-ebb135f/IntegratingFacebookTutorial-iOS",
+					/Users/kool/Documents/iPhone,
+					Development/RoomySpark,
+					/Users/kool/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dunno/Dunno-Prefix.pch";
 				INFOPLIST_FILE = "Dunno/Dunno-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -479,11 +499,15 @@
 					"$(PROJECT_DIR)",
 					"/Users/kool/Downloads/SocialConnector-master",
 					"/Users/kool/Downloads/ParsePlatform-IntegratingFacebookTutorial-ebb135f/IntegratingFacebookTutorial-iOS",
+					/Users/kool/Documents/iPhone,
+					Development/RoomySpark,
+					/Users/kool/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dunno/Dunno-Prefix.pch";
 				INFOPLIST_FILE = "Dunno/Dunno-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
