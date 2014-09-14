@@ -22,6 +22,14 @@
 		2FF08A2C19C50F1D00061631 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FF08A2A19C50F1D00061631 /* InfoPlist.strings */; };
 		2FF08A2E19C50F1D00061631 /* DunnoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF08A2D19C50F1D00061631 /* DunnoTests.m */; };
 		2FF08A3A19C5132D00061631 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF08A3919C5132D00061631 /* Parse.framework */; };
+		76DA890519C53262006D8CC0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA890419C53262006D8CC0 /* SystemConfiguration.framework */; };
+		76DA890719C532A1006D8CC0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA890619C532A1006D8CC0 /* CFNetwork.framework */; };
+		76DA890919C532A7006D8CC0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA890819C532A7006D8CC0 /* Security.framework */; };
+		76DA890B19C532E2006D8CC0 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA890A19C532E2006D8CC0 /* libz.1.1.3.dylib */; };
+		76DA890D19C532E8006D8CC0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA890C19C532E8006D8CC0 /* MobileCoreServices.framework */; };
+		76DA890F19C532ED006D8CC0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA890E19C532ED006D8CC0 /* QuartzCore.framework */; };
+		76DA891119C532F2006D8CC0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA891019C532F2006D8CC0 /* StoreKit.framework */; };
+		76DA891319C532FB006D8CC0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA891219C532FB006D8CC0 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,14 @@
 		2FF08A2B19C50F1D00061631 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2FF08A2D19C50F1D00061631 /* DunnoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DunnoTests.m; sourceTree = "<group>"; };
 		2FF08A3919C5132D00061631 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		76DA890419C53262006D8CC0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		76DA890619C532A1006D8CC0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		76DA890819C532A7006D8CC0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		76DA890A19C532E2006D8CC0 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		76DA890C19C532E8006D8CC0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		76DA890E19C532ED006D8CC0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		76DA891019C532F2006D8CC0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		76DA891219C532FB006D8CC0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +78,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76DA891319C532FB006D8CC0 /* AudioToolbox.framework in Frameworks */,
+				76DA891119C532F2006D8CC0 /* StoreKit.framework in Frameworks */,
+				76DA890F19C532ED006D8CC0 /* QuartzCore.framework in Frameworks */,
+				76DA890D19C532E8006D8CC0 /* MobileCoreServices.framework in Frameworks */,
+				76DA890B19C532E2006D8CC0 /* libz.1.1.3.dylib in Frameworks */,
+				76DA890919C532A7006D8CC0 /* Security.framework in Frameworks */,
+				76DA890719C532A1006D8CC0 /* CFNetwork.framework in Frameworks */,
+				2FF08A3A19C5132D00061631 /* Parse.framework in Frameworks */,
+				76DA890519C53262006D8CC0 /* SystemConfiguration.framework in Frameworks */,
 				2FF08A0519C50F1C00061631 /* CoreGraphics.framework in Frameworks */,
 				2FF08A0719C50F1C00061631 /* UIKit.framework in Frameworks */,
-				2FF08A3A19C5132D00061631 /* Parse.framework in Frameworks */,
 				2FF08A0319C50F1C00061631 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +128,14 @@
 		2FF08A0119C50F1C00061631 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76DA891219C532FB006D8CC0 /* AudioToolbox.framework */,
+				76DA891019C532F2006D8CC0 /* StoreKit.framework */,
+				76DA890E19C532ED006D8CC0 /* QuartzCore.framework */,
+				76DA890C19C532E8006D8CC0 /* MobileCoreServices.framework */,
+				76DA890A19C532E2006D8CC0 /* libz.1.1.3.dylib */,
+				76DA890819C532A7006D8CC0 /* Security.framework */,
+				76DA890619C532A1006D8CC0 /* CFNetwork.framework */,
+				76DA890419C53262006D8CC0 /* SystemConfiguration.framework */,
 				2FF08A3919C5132D00061631 /* Parse.framework */,
 				2FF08A0219C50F1C00061631 /* Foundation.framework */,
 				2FF08A0419C50F1C00061631 /* CoreGraphics.framework */,
