@@ -60,6 +60,7 @@ static NSString *const publish_actions = @"publish_actions";
     FBRequest *request = [[FBRequest alloc] initWithSession:FBSession.activeSession
                                                   graphPath:@"/me" parameters:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"name,picture,first_name,last_name,email",@"fields",
                                                                                nil] HTTPMethod:@"GET"];
+    NSLog(@"%@", request);
     
     [newConnection addRequest:request completionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -159,7 +160,7 @@ NSString *NSStringFromFBSessionState(FBSessionState state) {
     
     self.openBlock = completionBlock;
     
-    [FBSession openActiveSessionWithReadPermissions:@[@"basic_info",@"email"] allowLoginUI:YES completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+    [FBSession openActiveSessionWithReadPermissions:@[@"public_profile",@"email"] allowLoginUI:YES completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [self sessionStateChanged:session state:status error:error open:YES permissions:NO];
         });

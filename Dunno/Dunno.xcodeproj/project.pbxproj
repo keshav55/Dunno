@@ -457,6 +457,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"/Users/kool/Downloads/SocialConnector-master",
+					"/Users/kool/Downloads/ParsePlatform-IntegratingFacebookTutorial-ebb135f/IntegratingFacebookTutorial-iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dunno/Dunno-Prefix.pch";
@@ -477,6 +478,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"/Users/kool/Downloads/SocialConnector-master",
+					"/Users/kool/Downloads/ParsePlatform-IntegratingFacebookTutorial-ebb135f/IntegratingFacebookTutorial-iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dunno/Dunno-Prefix.pch";
