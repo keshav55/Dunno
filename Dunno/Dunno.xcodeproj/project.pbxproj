@@ -41,6 +41,7 @@
 		76DA892E19C567D5006D8CC0 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA892D19C567D5006D8CC0 /* Firebase.framework */; };
 		76DA893019C568A3006D8CC0 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA892F19C568A3006D8CC0 /* libicucore.dylib */; };
 		76DA893219C568B1006D8CC0 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA893119C568B1006D8CC0 /* libc++.dylib */; };
+		76DA893619C574B4006D8CC0 /* TwilioSMS.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA893519C574B4006D8CC0 /* TwilioSMS.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,8 @@
 		76DA892D19C567D5006D8CC0 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = ../../../../Downloads/Firebase.framework; sourceTree = "<group>"; };
 		76DA892F19C568A3006D8CC0 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		76DA893119C568B1006D8CC0 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		76DA893419C574B4006D8CC0 /* TwilioSMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwilioSMS.h; sourceTree = "<group>"; };
+		76DA893519C574B4006D8CC0 /* TwilioSMS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwilioSMS.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +200,7 @@
 				2FF08A1419C50F1D00061631 /* Main.storyboard */,
 				76DA891F19C549EE006D8CC0 /* LoginViewController.h */,
 				76DA892019C549EE006D8CC0 /* LoginViewController.m */,
+				76DA893319C574B4006D8CC0 /* TwilioSMS */,
 				2FF08A1719C50F1D00061631 /* XYZViewController.h */,
 				2FF08A1819C50F1D00061631 /* XYZViewController.m */,
 				2FF08A1A19C50F1D00061631 /* Images.xcassets */,
@@ -234,6 +238,15 @@
 				2FF08A2A19C50F1D00061631 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76DA893319C574B4006D8CC0 /* TwilioSMS */ = {
+			isa = PBXGroup;
+			children = (
+				76DA893419C574B4006D8CC0 /* TwilioSMS.h */,
+				76DA893519C574B4006D8CC0 /* TwilioSMS.m */,
+			);
+			path = TwilioSMS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76DA891619C5490E006D8CC0 /* SM_FBKit.m in Sources */,
+				76DA893619C574B4006D8CC0 /* TwilioSMS.m in Sources */,
 				2FF08A1919C50F1D00061631 /* XYZViewController.m in Sources */,
 				76DA892119C549EE006D8CC0 /* LoginViewController.m in Sources */,
 				2FF08A1319C50F1D00061631 /* XYZAppDelegate.m in Sources */,
