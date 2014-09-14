@@ -119,6 +119,13 @@
     
     
 }
+
+
+-(IBAction)resign:(id)sender {
+    
+    [sender resignFirstResponder];
+    
+}
 -(void)loginFacebook{
     Firebase* ref = [[Firebase alloc] initWithUrl:@"https://thedunno.firebaseio.com/"];
     FirebaseSimpleLogin* authClient = [[FirebaseSimpleLogin alloc] initWithRef:ref];
@@ -153,6 +160,7 @@
     NSString *city = [placeparse objectAtIndex:2];
     
 }
+
 
 /*
 #pragma mark - Navigation

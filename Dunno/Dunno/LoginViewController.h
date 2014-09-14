@@ -10,5 +10,8 @@
 
 @interface LoginViewController : UIViewController
 @property (strong, nonatomic) NSString * location;
+@property (strong, nonatomic) IBOutlet UITextField *phonenumber;
 @property (strong, nonatomic) NSString * place;
+
+-(IBAction)resign:(id)sender;
 @end
