@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F8FDB7319C58E4600386D79 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8FDB7219C58E4600386D79 /* Firebase.framework */; };
+		2F8FDB7719C58E8A00386D79 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8FDB7619C58E8A00386D79 /* FacebookSDK.framework */; };
+		2F8FDBEF19C5910B00386D79 /* FirebaseSimpleLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8FDBEE19C5910B00386D79 /* FirebaseSimpleLogin.framework */; };
+		2F8FDBF119C5936100386D79 /* question.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F8FDBF019C5936100386D79 /* question.jpg */; };
+		2F8FDBF319C594C600386D79 /* Citybg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F8FDBF219C594C600386D79 /* Citybg.png */; };
+		2F8FDBF919C595BD00386D79 /* Citybg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F8FDBF819C595BD00386D79 /* Citybg2.png */; };
 		2FF08A0319C50F1C00061631 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF08A0219C50F1C00061631 /* Foundation.framework */; };
 		2FF08A0519C50F1C00061631 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF08A0419C50F1C00061631 /* CoreGraphics.framework */; };
 		2FF08A0719C50F1C00061631 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF08A0619C50F1C00061631 /* UIKit.framework */; };
@@ -36,9 +42,6 @@
 		76DA891E19C54964006D8CC0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA891D19C54964006D8CC0 /* Social.framework */; };
 		76DA892119C549EE006D8CC0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA892019C549EE006D8CC0 /* LoginViewController.m */; };
 		76DA892419C54AB0006D8CC0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA892319C54AB0006D8CC0 /* MBProgressHUD.m */; };
-		76DA892619C54C36006D8CC0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA892519C54C36006D8CC0 /* FacebookSDK.framework */; };
-		76DA892C19C566A4006D8CC0 /* FirebaseSimpleLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA892B19C566A4006D8CC0 /* FirebaseSimpleLogin.framework */; };
-		76DA892E19C567D5006D8CC0 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA892D19C567D5006D8CC0 /* Firebase.framework */; };
 		76DA893019C568A3006D8CC0 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA892F19C568A3006D8CC0 /* libicucore.dylib */; };
 		76DA893219C568B1006D8CC0 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA893119C568B1006D8CC0 /* libc++.dylib */; };
 		76DA893619C574B4006D8CC0 /* TwilioSMS.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA893519C574B4006D8CC0 /* TwilioSMS.m */; };
@@ -56,6 +59,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F8FDB7219C58E4600386D79 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		2F8FDB7619C58E8A00386D79 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		2F8FDBEE19C5910B00386D79 /* FirebaseSimpleLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseSimpleLogin.framework; path = ../../../Downloads/FirebaseSimpleLogin.framework; sourceTree = "<group>"; };
+		2F8FDBF019C5936100386D79 /* question.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = question.jpg; path = ../../../../Desktop/question.jpg; sourceTree = "<group>"; };
+		2F8FDBF219C594C600386D79 /* Citybg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Citybg.png; path = ../../../../Desktop/Citybg.png; sourceTree = "<group>"; };
+		2F8FDBF819C595BD00386D79 /* Citybg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Citybg2.png; sourceTree = "<group>"; };
 		2FF089FF19C50F1C00061631 /* Dunno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dunno.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF08A0219C50F1C00061631 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2FF08A0419C50F1C00061631 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -94,9 +103,6 @@
 		76DA892019C549EE006D8CC0 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		76DA892219C54AB0006D8CC0 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		76DA892319C54AB0006D8CC0 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		76DA892519C54C36006D8CC0 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = "../../../../Downloads/SocialConnector-master/FacebookSDK.framework"; sourceTree = "<group>"; };
-		76DA892B19C566A4006D8CC0 /* FirebaseSimpleLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseSimpleLogin.framework; path = ../../RoomySpark/FirebaseSimpleLogin.framework; sourceTree = "<group>"; };
-		76DA892D19C567D5006D8CC0 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = ../../../../Downloads/Firebase.framework; sourceTree = "<group>"; };
 		76DA892F19C568A3006D8CC0 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		76DA893119C568B1006D8CC0 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		76DA893419C574B4006D8CC0 /* TwilioSMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwilioSMS.h; sourceTree = "<group>"; };
@@ -110,11 +116,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F8FDBEF19C5910B00386D79 /* FirebaseSimpleLogin.framework in Frameworks */,
+				2F8FDB7319C58E4600386D79 /* Firebase.framework in Frameworks */,
 				76DA893219C568B1006D8CC0 /* libc++.dylib in Frameworks */,
 				76DA893019C568A3006D8CC0 /* libicucore.dylib in Frameworks */,
-				76DA892E19C567D5006D8CC0 /* Firebase.framework in Frameworks */,
-				76DA892C19C566A4006D8CC0 /* FirebaseSimpleLogin.framework in Frameworks */,
-				76DA892619C54C36006D8CC0 /* FacebookSDK.framework in Frameworks */,
 				76DA891E19C54964006D8CC0 /* Social.framework in Frameworks */,
 				76DA891C19C5495E006D8CC0 /* Accounts.framework in Frameworks */,
 				76DA891319C532FB006D8CC0 /* AudioToolbox.framework in Frameworks */,
@@ -127,6 +132,7 @@
 				2FF08A3A19C5132D00061631 /* Parse.framework in Frameworks */,
 				76DA890519C53262006D8CC0 /* SystemConfiguration.framework in Frameworks */,
 				2FF08A0519C50F1C00061631 /* CoreGraphics.framework in Frameworks */,
+				2F8FDB7719C58E8A00386D79 /* FacebookSDK.framework in Frameworks */,
 				2FF08A0719C50F1C00061631 /* UIKit.framework in Frameworks */,
 				2FF08A0319C50F1C00061631 /* Foundation.framework in Frameworks */,
 			);
@@ -167,11 +173,11 @@
 		2FF08A0119C50F1C00061631 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F8FDBEE19C5910B00386D79 /* FirebaseSimpleLogin.framework */,
+				2F8FDB7619C58E8A00386D79 /* FacebookSDK.framework */,
+				2F8FDB7219C58E4600386D79 /* Firebase.framework */,
 				76DA893119C568B1006D8CC0 /* libc++.dylib */,
 				76DA892F19C568A3006D8CC0 /* libicucore.dylib */,
-				76DA892D19C567D5006D8CC0 /* Firebase.framework */,
-				76DA892B19C566A4006D8CC0 /* FirebaseSimpleLogin.framework */,
-				76DA892519C54C36006D8CC0 /* FacebookSDK.framework */,
 				76DA891D19C54964006D8CC0 /* Social.framework */,
 				76DA891B19C5495E006D8CC0 /* Accounts.framework */,
 				76DA891219C532FB006D8CC0 /* AudioToolbox.framework */,
@@ -217,6 +223,8 @@
 		2FF08A0919C50F1C00061631 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2F8FDBF819C595BD00386D79 /* Citybg2.png */,
+				2F8FDBF219C594C600386D79 /* Citybg.png */,
 				76DA892219C54AB0006D8CC0 /* MBProgressHUD.h */,
 				76DA892319C54AB0006D8CC0 /* MBProgressHUD.m */,
 				2FF08A0A19C50F1C00061631 /* Dunno-Info.plist */,
@@ -239,6 +247,7 @@
 		2FF08A2819C50F1D00061631 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2F8FDBF019C5936100386D79 /* question.jpg */,
 				2FF08A2919C50F1D00061631 /* DunnoTests-Info.plist */,
 				2FF08A2A19C50F1D00061631 /* InfoPlist.strings */,
 			);
@@ -337,6 +346,8 @@
 				2FF08A1B19C50F1D00061631 /* Images.xcassets in Resources */,
 				2FF08A0D19C50F1C00061631 /* InfoPlist.strings in Resources */,
 				2FF08A1619C50F1D00061631 /* Main.storyboard in Resources */,
+				2F8FDBF919C595BD00386D79 /* Citybg2.png in Resources */,
+				2F8FDBF319C594C600386D79 /* Citybg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FF08A2C19C50F1D00061631 /* InfoPlist.strings in Resources */,
+				2F8FDBF119C5936100386D79 /* question.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +509,8 @@
 					/Users/kool/Documents/iPhone,
 					Development/RoomySpark,
 					/Users/kool/Downloads,
+					"$(PROJECT_DIR)/firebase-simple-login-objc-master",
+					/Users/saiteja64/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dunno/Dunno-Prefix.pch";
@@ -522,6 +536,8 @@
 					/Users/kool/Documents/iPhone,
 					Development/RoomySpark,
 					/Users/kool/Downloads,
+					"$(PROJECT_DIR)/firebase-simple-login-objc-master",
+					/Users/saiteja64/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dunno/Dunno-Prefix.pch";

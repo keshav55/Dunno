@@ -32,6 +32,7 @@
 
 - (void)viewDidLoad
 {
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Citybg2.png"]];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -107,6 +108,7 @@
     [SM_LocationKit getPlacemarkLocationOnSuccess:^(CLPlacemark *place) {
         NSLog(@"-- %@", place);
         _place = [[NSString alloc] initWithFormat:@"-- %@", place];
+       
         
         [self saveThis];
 
