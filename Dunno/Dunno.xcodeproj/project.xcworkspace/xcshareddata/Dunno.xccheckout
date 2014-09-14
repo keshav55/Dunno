@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7C3CD3DD-0DEF-4246-B304-54291B51E811</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Dunno</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B4F4EDFD-23D4-409F-99BA-A30AD63CBB70</key>
+		<string>https://github.com/keshav55/Dunno.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Dunno/Dunno.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B4F4EDFD-23D4-409F-99BA-A30AD63CBB70</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/keshav55/Dunno.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B4F4EDFD-23D4-409F-99BA-A30AD63CBB70</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B4F4EDFD-23D4-409F-99BA-A30AD63CBB70</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Dunno</string>
+		</dict>
+	</array>
+</dict>
+</plist>
