@@ -14,6 +14,7 @@
 
 @implementation XYZViewController {
     
+    
     PFObject *Dunnousers;
     NSString *currentObjectID;
     
@@ -87,6 +88,8 @@
     _username.text = @"";
     _password.text = @"";
     
+    _statuslabel.text = @"Signed Up";
+    
 }
 
 -(IBAction)login:(id)sender {
@@ -94,8 +97,11 @@
     for (NSMutableDictionary * dict in _users) {
         
         if([[dict objectForKey:_password.text] isEqualToString: _username.text]) {
-            
-            
+            _username.text = @"";
+            _username.hidden = YES;
+            _password.text = @"";
+            _password.hidden = NO;
+              _statuslabel.text = @"";
             break;
         }
     }

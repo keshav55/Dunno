@@ -12,7 +12,9 @@
 @property (strong, nonatomic) NSMutableArray* users;
 @property (strong, nonatomic) IBOutlet UITextField * username;
 @property (strong, nonatomic) IBOutlet UITextField * password;
-
+@property (strong, nonatomic) IBOutlet UIButton * signbut;
+@property (strong, nonatomic) IBOutlet UIButton * logbut;
+@property (strong, nonatomic) IBOutlet UILabel * statuslabel;
 -(IBAction)signup:(id)sender;
 -(IBAction)login:(id)sender;
 
