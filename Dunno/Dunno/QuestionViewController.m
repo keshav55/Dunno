@@ -7,6 +7,8 @@
 //
 
 #import "QuestionViewController.h"
+#import <Firebase/Firebase.h>
+
 
 @interface QuestionViewController ()
 
@@ -25,15 +27,20 @@
 
 - (void)viewDidLoad
 {
+   
+ 
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
+    }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+
 
 /*
 #pragma mark - Navigation
@@ -45,5 +52,25 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)Feed:(id)sender {
+    NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+    NSString * city = [defaults objectForKey:@"city"];
+    
+    NSMutableDictionary * _Questions = [NSMutableDictionary dictionaryWithCapacity:100];
+    
+    [_Questions setObject:@"" forKey: _questionfield.text];
+  
+    NSDictionary *send = @{@"question":_questionfield.text, @"answer": @"", @"city":city};
+    NSDictionary *final =@{_questionfield.text:send};
+    
+    Firebase* userj = [[Firebase alloc] initWithUrl:@"https://thedunno.firebaseio.com/"];
+    
+    
+    [userj setValue:final];
+    
+}
+
+
 
 @end

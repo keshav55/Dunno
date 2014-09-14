@@ -5,31 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-<<<<<<< HEAD
-	<string>2CE37B6A-3615-439A-8ABE-4C446981F01E</string>
-=======
-	<string>7C3CD3DD-0DEF-4246-B304-54291B51E811</string>
->>>>>>> FETCH_HEAD
+	<string>701A8E32-5B26-4D96-81A8-464BA52E8CD3</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Dunno</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-<<<<<<< HEAD
-		<key>CE96A026-7A77-4E88-B2BD-255DF6BE76C0</key>
-=======
-		<key>B4F4EDFD-23D4-409F-99BA-A30AD63CBB70</key>
->>>>>>> FETCH_HEAD
+		<key>ED8FDFE6-2486-4072-A508-C8877BECEDC8</key>
 		<string>https://github.com/keshav55/Dunno.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Dunno/Dunno.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-<<<<<<< HEAD
-		<key>CE96A026-7A77-4E88-B2BD-255DF6BE76C0</key>
-=======
-		<key>B4F4EDFD-23D4-409F-99BA-A30AD63CBB70</key>
->>>>>>> FETCH_HEAD
+		<key>ED8FDFE6-2486-4072-A508-C8877BECEDC8</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -37,22 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-<<<<<<< HEAD
-	<string>CE96A026-7A77-4E88-B2BD-255DF6BE76C0</string>
-=======
-	<string>B4F4EDFD-23D4-409F-99BA-A30AD63CBB70</string>
->>>>>>> FETCH_HEAD
+	<string>ED8FDFE6-2486-4072-A508-C8877BECEDC8</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-<<<<<<< HEAD
-			<string>CE96A026-7A77-4E88-B2BD-255DF6BE76C0</string>
-=======
-			<string>B4F4EDFD-23D4-409F-99BA-A30AD63CBB70</string>
->>>>>>> FETCH_HEAD
+			<string>ED8FDFE6-2486-4072-A508-C8877BECEDC8</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Dunno</string>
 		</dict>

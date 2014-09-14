@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface QuestionViewController : UIViewController
+- (IBAction)Feed:(id)sender;
+@property (strong, nonatomic) IBOutlet UITextField *questionfield;
 
 @end

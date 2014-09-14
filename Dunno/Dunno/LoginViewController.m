@@ -157,6 +157,7 @@
 -(void) saveThis {
     
     NSDictionary *dict = [[NSUserDefaults standardUserDefaults]objectForKey:@"dict"];
+    
     NSLog(@"%@", _place);
     NSArray *placeparse = [_place componentsSeparatedByString:@","];
     NSLog(@"%@", placeparse);
@@ -164,6 +165,11 @@
     NSString *number = _phonenumber.text;
     NSString *fuid = [dict objectForKey:@"uid"];
     NSString *name = [dict objectForKey:@"name"];
+   
+    NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:city forKey:@"city"];
+    [defaults synchronize];
+    
     
     NSDictionary *send = @{@"name":name, @"number":number, @"city":city};
     NSDictionary *final =@{fuid:send};
