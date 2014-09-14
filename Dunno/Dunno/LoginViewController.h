@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LoginViewController : UIViewController
-
+@property (strong, nonatomic) NSString * location;
+@property (strong, nonatomic) NSString * place;
 @end

@@ -98,16 +98,24 @@
     
     [SM_LocationKit getBallParkLocationOnSuccess:^(CLLocation *loc) {
         NSLog(@"-- %@", loc);
-    } onFailure:^(NSInteger failCode) {
+        _location = [[NSString alloc] initWithFormat:@"-- %@", loc];    } onFailure:^(NSInteger failCode) {
         NSLog(@"-- Failed:%@",failCode==0?@"Authorization Failure":@"Timeout Failure");
     }
      ];
     
     [SM_LocationKit getPlacemarkLocationOnSuccess:^(CLPlacemark *place) {
         NSLog(@"-- %@", place);
+        _place = [[NSString alloc] initWithFormat:@"-- %@", place];
+        
+        [self saveThis];
+
     } onFailure:^(NSInteger failCode) {
         NSLog(@"-- Failed:%@",failCode==0?@"Authorization Failure":@"Timeout Failure");
     }];
+    
+//    NSDictionary *dict = [[NSUserDefaults standardUserDefaults]objectForKey:@"dict"];
+//    NSLog(@"%@", _place);
+//    NSLog(@"%@", _location);
     
     
 }
@@ -134,6 +142,16 @@
 //                             [self.navigationController pushViewController:secondViewController animated:YES];
                          }
                      }];
+}
+
+-(void) saveThis {
+    
+    NSDictionary *dict = [[NSUserDefaults standardUserDefaults]objectForKey:@"dict"];
+    NSLog(@"%@", _place);
+    NSArray *placeparse = [_place componentsSeparatedByString:@","];
+    NSLog(@"%@", placeparse);
+    NSString *city = [placeparse objectAtIndex:2];
+    
 }
 
 /*
